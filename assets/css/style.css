@@ -1,0 +1,601 @@
+body {
+    background: darkgrey;
+    color: white;
+    background-image: url(https://github.com/claudiafalk0/BandSpot/blob/Claudia/assets/images/concert-red.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.mainmenubtn,
+#clear_list_button,
+#delete_item_button,
+#album_search_button {
+    width: 160px;
+    font-size: 15px;
+}
+
+
+.mainmenubtn {
+    background: darkgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 160px;
+    border-radius: 1em;
+    padding: 2.5px 0px;
+}
+
+#clear_list_button {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+}
+
+#delete_item_button {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+}
+
+table {
+    display: none;
+    text-align: center;
+
+    width: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#album_search_button {
+    border-radius: 1em;
+    background: darkgray;
+}
+
+button {
+    background: darkgray;
+    border-radius: 1em;
+    font-family: 'Permanent Marker', cursive;
+    align-self: center;
+    text-align: center;
+}
+
+#Image {
+    width: 15em;
+}
+
+#navBar {
+    display: grid;
+    grid-template-columns: 12em 12em 12em auto 12em 12em 12em;
+    grid-template-rows: 3em;
+}
+
+#album_search_text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    align-self: center;
+    text-align: center;
+    background: darkgray;
+    height: 21px;
+    color: black;
+    border-radius: 1em;
+    width: auto;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.input-group-append {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    display: block;
+    margin: auto;
+    justify-self: center;
+}
+
+#title {
+    font-family: 'Rock Salt', cursive;
+    color: yellow;
+    font-size: 2em;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    align-self: center;
+    text-align: center;
+}
+
+#history {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.dropdown-child {
+    display: none;
+}
+
+.dropdown-child,
+#album_search_dropdown {
+    position: absolute;
+    min-width: 23em;
+    max-height: 2em;
+    /* box-shadow: 0em 1em 2em 0em rgba(0, 0, 0, 0.2); */
+    padding: .5em;
+    z-index: 1;
+}
+
+.dropdown-child a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background: whitesmoke;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.listPicture {
+    float: left;
+    width: 2em;
+    border: 1px solid white;
+}
+
+#musicInfo {
+    display: grid;
+    grid-template-columns: 5em 15em 2em auto 2em 20em;
+    grid-template-rows: 5em 10em auto 5em;
+    padding-top: 5em;
+}
+
+#artistName {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    align-self: center;
+    font-size: 2em;
+}
+
+#artistImage {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#bio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1.15em;
+}
+
+#widgetPlacement {
+    display: grid;
+    grid-template-columns: 1em 37.5em 5em 45em;
+    grid-template-rows: 3em auto;
+}
+
+#widget {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.ticketMaster {
+    display: none;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
+
+#no_events {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    font-size: 1.5em;
+}
+
+#ticket-button {
+    color: white;
+    text-decoration: none;
+    display: block
+}
+
+#ticket-button:visited {
+    color: pink;
+}
+
+.dropdown-item {
+    padding: .2em 0em;
+    background: rgb(211, 211, 211, .9);
+    color: black;
+}
+
+td {
+    padding: 0em 1em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+th {
+    font-family: 'Permanent Marker', cursive;
+}
+
+@media screen and (max-width:980px) {
+
+    body {
+        background-image: url(https://github.com/claudiafalk0/BandSpot/blob/Claudia/assets/images/concert-red.jpg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #navBar {
+        display: grid;
+        width: auto;
+        grid-template-columns: 12em auto 12em;
+        grid-template-rows: auto auto 1em auto;
+    }
+
+    #title {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    #album_search_text {
+        width: 45%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .input-group-append {
+        width: 45%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-right: 2em;
+        text-align: right;
+    }
+
+    #clear_list_button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+    }
+
+    #history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+    }
+
+    #delete_item_button {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    #musicInfo {
+        display: grid;
+        grid-template-columns: auto 1em auto 1em auto;
+        grid-template-rows: auto auto;
+        padding-top: 10em;
+    }
+
+    #artistImage {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+
+    #artistName {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #bio {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+    }
+
+    #widgetPlacement {
+        display: grid;
+        grid-template-columns: 6em 6em auto 6em 6em;
+        grid-template-rows: auto auto auto;
+    }
+
+    #widget {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+    .ticketMaster {
+        display: none;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        margin-left: 3.5em;
+    }
+
+    #no_events {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:786px) {
+
+    body {
+        background-image: url(https://github.com/claudiafalk0/BandSpot/blob/Claudia/assets/images/concert-red.jpg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #navBar {
+        display: grid;
+        width: auto;
+        grid-template-columns: 12em auto 12em;
+        grid-template-rows: auto auto 1em auto;
+    }
+
+    #title {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    #album_search_text {
+        width: 45%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .input-group-append {
+        width: 45%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-right: 2em;
+        text-align: right;
+    }
+
+    #clear_list_button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        margin-left: 1em;
+    }
+
+    #history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+    }
+
+    #delete_item_button {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    #musicInfo {
+        display: grid;
+        grid-template-columns: 12em auto 12em;
+        grid-template-rows: 4em 12em 5em auto;
+        padding-top: 10em;
+    }
+
+    #artistName {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #artistImage {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: auto;
+    }
+
+    #bio {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+    }
+
+    #widgetPlacement {
+        display: grid;
+        grid-template-columns: 6em auto 6em 6em;
+        grid-template-rows: auto auto auto;
+        padding-top: 2em;
+    }
+
+    #widget {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .ticketMaster {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-left: 3.5em;
+    }
+
+    #no_events {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    body {
+        background-image: url(https://github.com/claudiafalk0/BandSpot/blob/Claudia/assets/images/concert-red.jpg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #navBar {
+        display: grid;
+        width: 640px;
+        grid-template-columns: 12em auto 12em;
+        grid-template-rows: auto auto 1em auto;
+    }
+
+    #title {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    #album_search_text {
+        width: 45%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-left: 4em;
+    }
+
+    .input-group-append {
+        width: 45%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        margin-right: 4.5em;
+        text-align: right;
+    }
+
+    #clear_list_button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        margin-left: 1.25em;
+    }
+
+    #history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        text-align: center;
+    }
+
+    #delete_item_button {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    #musicInfo {
+        display: grid;
+        width: 640px;
+        grid-template-columns: 12em auto 12em;
+        grid-template-rows: 4em 12em 5em auto;
+        padding-top: 10em;
+    }
+
+    #artistName {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #artistImage {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: auto;
+    }
+
+    #bio {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+    }
+
+    #widgetPlacement {
+        display: grid;
+        grid-template-columns: 6em auto 6em 6em;
+        grid-template-rows: auto auto auto;
+        padding-top: 2em;
+    }
+
+    #widget {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        margin-left: 1em;
+    }
+
+    .ticketMaster {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-left: 1em;;
+    }
+
+    #no_events {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        text-align: center;
+    }
+}
